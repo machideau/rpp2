@@ -33,6 +33,13 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <!-- Ajoutez ceci dans la section head, avec vos autres scripts -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("VOTRE_CLE_PUBLIQUE");
+    })();
+  </script>
 
 </head>
 
@@ -501,6 +508,9 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <!-- Ajoutez ceci juste avant la fermeture du body -->
+  <script src="js/email-handler.js"></script>
 
 </body>
 </html>
