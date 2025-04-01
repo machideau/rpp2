@@ -38,7 +38,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
     (function() {
-      emailjs.init("VOTRE_CLE_PUBLIQUE");
+      emailjs.init("service_2w1u3rh");
     })();
   </script>
 
@@ -436,24 +436,24 @@
             <div class="form">
               <div id="sendmessage">Message envoyé. Merci!</div>
               <div id="errormessage">Message non envoyé, Reessayez!</div>
-              <form action="" method="post" role="form" class="contactForm">
+              <form id="contactForm" class="contactForm">
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Veuillez entrer au moins 4 caractères" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" required />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center"><button class="message" type="submit">Send Message</button></div>
+                <div class="text-center"><button class="message" type="submit">Envoyer le Message</button></div>
               </form>
             </div>
           </div>
