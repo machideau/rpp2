@@ -16,7 +16,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     };
 
     // Envoyer l'email
-    emailjs.send('VOTRE_SERVICE_ID', 'VOTRE_TEMPLATE_ID', templateParams)
+    emailjs.send("service_2w1u3rh","template_i227tug", templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             document.getElementById('sendmessage').classList.add('show');
